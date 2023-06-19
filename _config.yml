@@ -1,0 +1,23 @@
+name: "Barad Lab"
+description: "The Barad Lab is a cryo-electron tomography and computational structural biology lab at Oregon Health & Science University"
+
+#url: "https://baradlab.com"
+
+paginate: 5
+plugins: [jekyll-paginate]
+paginate_path: "news/page:num"
+
+permalink: pretty
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  
+collections:
+  members:
+    output: false
+  publications:
+    output: false
+  alumni:
+    output: false
+  courses:
+    output: false

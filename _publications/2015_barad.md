@@ -12,7 +12,7 @@ pdbs:
 - 3J9I
 - 3J9J
 github:
-- description: EMRinger Pyth
+- description: EMRinger
   url: fraser-lab/EMRinger
 links:
 - name: Fraser Lab

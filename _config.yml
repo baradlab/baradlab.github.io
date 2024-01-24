@@ -1,4 +1,4 @@
-name: "Barad Lab"
+title: "Barad Lab"
 description: "The Barad Lab is a cryo-electron tomography and computational structural biology lab at Oregon Health & Science University"
 cdn: https://cdn.baradlab.com/file/baradlabweb/
 url: https://baradlab.com
@@ -24,4 +24,5 @@ collections:
     group: publications
     layout: default
     output: True
+
 

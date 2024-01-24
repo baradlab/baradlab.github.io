@@ -4,7 +4,7 @@
 }
 
 .paral {
-  height: 300px;
+  height: 24em;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
@@ -14,9 +14,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #616060
+  background-color: #616060;
 
-  /*background-position: 50% 50%;*/
+  background-position: 50% 50%;
 }
 /*
 .paral p {

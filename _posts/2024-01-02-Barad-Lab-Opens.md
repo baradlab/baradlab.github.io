@@ -13,4 +13,4 @@ Our lab will start out focused on two things:
 
 We welcome collaborations beyond these initial starting points and especially love to help adapt our methods to solve challenging problems in structural and ultrastructural biology. Our methods will always be available open source on our [Github](https://github.com/baradlab) and we are happy to welcome outside feedback and contribution, up to and including contributions that merit authorship in the papers describing our work. 
 
-![Barad Lab]({{site.cdn}}img/news/baradlabopens.webp)
+<img src="{{site.cdn}}img/news/baradlabopens.webp" class="img-fluid" alt="Ben's open office!"> 

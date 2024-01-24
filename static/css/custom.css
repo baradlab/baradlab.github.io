@@ -5,6 +5,7 @@
 
 .paral {
   height: 24em;
+  height: 40dvh;
   max-height: 80vh;
   max-height: 80dvh;
   background-attachment: fixed;

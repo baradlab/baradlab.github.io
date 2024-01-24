@@ -2,7 +2,7 @@
 title: Join the Barad Lab
 layout: parallax
 group: join
-banner: img/site/banners/marquam_hill_fog.webp
+banner: img/site/banners/square_fog.webp
 ---
 
 

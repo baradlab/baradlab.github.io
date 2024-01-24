@@ -4,19 +4,19 @@
 }
 
 .paral {
-  height: 24em;
+  height: 20em;
+  max-height: 40vw;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 120vw;
+  background-position: top -5vw center;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #616060;
 
-  background-position: 50% 50%;
 }
 /*
 .paral p {

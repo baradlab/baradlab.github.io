@@ -1,7 +1,8 @@
 name: "Barad Lab"
 description: "The Barad Lab is a cryo-electron tomography and computational structural biology lab at Oregon Health & Science University"
-
-#url: "https://baradlab.com"
+cdn: https://cdn.baradlab.com/file/baradlabweb/
+url: https://baradlab.com
+baseurl: /
 
 paginate: 5
 plugins: [jekyll-paginate]
@@ -11,13 +12,16 @@ permalink: pretty
 markdown: kramdown
 kramdown:
   parse_block_html: true
+
+
   
 collections:
-  members:
-    output: false
-  publications:
-    output: false
+  members: 
+    output: True
   alumni:
-    output: false
-  courses:
-    output: false
+    output: False
+  publications:
+    group: publications
+    layout: default
+    output: True
+

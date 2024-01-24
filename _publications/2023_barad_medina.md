@@ -1,6 +1,6 @@
 ---
-title: "Quantifying organellar ultrastructure in cryo-electron tomography using a surface morphometrics pipeline."
-authors: "**Barad BA<sup>†</sup>**, Medina M<sup>†</sup>, Fuentes D, Wiseman, RL, Grotjahn DA."
+title: "Quantifying organellar ultrastructure in cryo-electron tomography using a surface morphometrics pipeline"
+authors: "**Barad BA<sup>†</sup>**, Medina M<sup>†</sup>, Fuentes D, Wiseman, RL, Grotjahn DA<sup>✉</sup>"
 journal: "Journal of Cell Biology"
 pub_date: '2023-02-14'
 image: 'img/pub/2023_barad.webp'

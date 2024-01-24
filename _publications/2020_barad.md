@@ -1,6 +1,6 @@
 ---
 title: "Differences in the chitinolytic activity of mammalian chitinases on soluble and insoluble substrates"
-authors: "**Barad BA**, Liu L, Diaz RE, Basillo R, Van Dyken SJ, Locksley RM, Fraser JS"
+authors: "**Barad BA**, Liu L, Diaz RE, Basillo R, Van Dyken SJ, Locksley RM, Fraser JS<sup>✉</sup>"
 journal: 'Protein Science'
 pub_date: '2020-01-12'
 image: 'img/pub/2019_barad.webp'

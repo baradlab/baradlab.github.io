@@ -8,9 +8,9 @@
   max-height: 40vw;
   max-height: 40dvw;
   background-attachment: fixed;
-  background-size: 120vw;
-  background-size: 150dvw;
-  background-position: top -5vw center;
+  background-size: cover;
+  background-size: max(100dvh, 100dvw);
+  background-position: top center;
   background-repeat: no-repeat;
   background-color: #000000;
   

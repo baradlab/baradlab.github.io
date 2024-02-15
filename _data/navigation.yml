@@ -18,9 +18,9 @@
   link: "/members"
   group: members
 
-# - name: teaching
-#   link: "/courses"
-#   group: courses
+- name: teaching
+  link: "/teaching"
+  group: teaching
 
 - name: news
   link: "/news"

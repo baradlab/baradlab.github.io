@@ -16,4 +16,4 @@ startdate: ["2024-03-04"]
 enddate: []
 ---
 
-Andrew is interested in working at the interface of chemistry and biology to reveal the underlying mechanisms of frequently intractable cellular processes such as lipid trafficking and membrane dynamics. I want to accomplish this by utilizing an approach that bridges the disciplines of biochemistry, chemical biology, and structural biology, to achieve a greater understanding from the molecular to the cellular level.
+Andrew is interested in working at the interface of chemistry and biology to reveal the underlying mechanisms of frequently intractable cellular processes such as lipid trafficking and membrane dynamics. He wants to accomplish this by utilizing an approach that bridges the disciplines of biochemistry, chemical biology, and structural biology, to achieve a greater understanding from the molecular to the cellular level.

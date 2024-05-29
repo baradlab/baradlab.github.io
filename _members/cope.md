@@ -1,5 +1,6 @@
 ---
 name: Jessica Cope
+image: img/members/cope_large.webp
 position: Research Assistant
 email: copeje@ohsu.edu
 github: jessicamcope

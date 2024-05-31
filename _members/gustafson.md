@@ -2,7 +2,7 @@
 name: Andrew Gustafson
 pubname: Gustafson A
 image: img/members/gustafson_large.webp
-position: Rotation student
+position: Graduate student
 order: 1
 email: gustafan@ohsu.edu
 # scholar: XDH9FrwAAAAJ

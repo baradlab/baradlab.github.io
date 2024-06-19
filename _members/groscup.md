@@ -1,6 +1,6 @@
 ---
 name: Kate Groscup
-image: img/members/groscup_large.webp
+image: img/members/groscup_large.jpg
 position: Undergraduate Student
 email: groscup@ohsu.edu
 github: Kate-G-stem

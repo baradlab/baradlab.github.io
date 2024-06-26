@@ -10,10 +10,8 @@ Our lab welcomes applicants from any race, ethnicity, religion, national origin,
 
 We are always in the market for motivated and talented people, even if we do not have an open position currently advertised. We are interested in engaging with you in a conversation about your scientific background and goals for your future career (in academia, industry, or other ventures). We strive to provide excellent training across a wide range of computational and experimental techniques. If interested please send your CV/Resume to [Dr. Benjamin Barad](/contact). Because we believe in fair compensation for people's work, we do not accept volunteer positions in the lab.
 
-### Currrently, we have the following open positions available:
-* [Research Assistant](https://externalcareers-ohsu.icims.com/jobs/27806/research-assistant-2/job) to help establish sample preparation protocols for studying early bacterial infection by cryoET.
+### Currently, we have the following advertised open positions available, but we will hire for additional positions when good fits arrive:
 * [Postdoctoral Researcher](https://postdoctoral-ohsu.icims.com/jobs/27805/postdoctoral-scholar/job) to lead projects focused on cytoskeletal reorganization during intracellular bacterial infection.
-* [Summer Undergraduate Intern](https://www.ohsu.edu/school-of-medicine/chemical-physiology-and-biochemistry/chemical-physiology-and-biochemistry-summer) to assist with sample preparation and tomographic data processing, segmentation, and quantification.
 
 ## Graduate Students
 

@@ -8,7 +8,7 @@ email: barad@ohsu.edu
 scholar: XDH9FrwAAAAJ
 twitter: benjaminbarad
 bluesky: tomo.science
-orcid: 0000-0001-5908-7882
+orcid: 0000-0002-1016-862X
 github: bbarad
 pronouns: he/him/his
 ohsu: benjamin-a-barad-phd

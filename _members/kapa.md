@@ -1,6 +1,6 @@
 ---
 name: Hemanth Kapa
-image: 
+image: img/members/kapa_large.webp
 position: Undergraduate Student
 email:  kapa@ohsu.edu
 github: hemanthkapa

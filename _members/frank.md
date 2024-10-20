@@ -2,11 +2,11 @@
 name: Mark Frank, Ph.D.
 pubname: Frank, MA
 scholar: WLSzodwAAAAJ
-image: 
+image: img/members/frank_large.webp
 orcid: 0000-0001-9179-6881
 position: Postdoctoral Scholar
 email: frankma@ohsu.edu
-gitgub: maf491
+github: maf491
 twitter: markfrankbio
 bluesky: markfrankbio
 pronouns: he/him/his

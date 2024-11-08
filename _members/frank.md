@@ -8,7 +8,7 @@ position: Postdoctoral Scholar
 email: frankma@ohsu.edu
 github: maf491
 twitter: markfrankbio
-bluesky: markfrankbio
+bluesky: markfrankbio.bsky.social
 pronouns: he/him/his
 startdate: ["2024-10-14"]
 ---

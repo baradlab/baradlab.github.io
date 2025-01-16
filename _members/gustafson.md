@@ -3,7 +3,7 @@ name: Andrew Gustafson
 pubname: Gustafson A
 image: img/members/gustafson_large.webp
 position: Graduate Student
-order: 1
+order: 3
 email: gustafan@ohsu.edu
 # scholar: XDH9FrwAAAAJ
 # twitter: benjaminbarad

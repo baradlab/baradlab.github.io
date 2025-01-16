@@ -1,5 +1,6 @@
 ---
 name: Hemanth Kapa
+order: 5
 image: img/members/kapa_large.webp
 position: Undergraduate Student
 email:  kapa@ohsu.edu

@@ -1,6 +1,7 @@
 ---
 name: Mark Frank, Ph.D.
 pubname: Frank, MA
+order: 2
 scholar: WLSzodwAAAAJ
 image: img/members/frank_large.webp
 orcid: 0000-0001-9179-6881

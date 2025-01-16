@@ -9,7 +9,8 @@ banner: img/site/banners/darkseg.webp
 
 The Barad lab welcomes people of any race, ethnicity, religion, national origin, gender identity, gender expression, caregiver and family commitments, political affiliation, sexual orientation, and eligible age or disability status.<br>
 
-{% for member in site.members %}
+{% assign sorted_members = site.members | sort: 'startdate' %}
+{% for member in sorted_members %}
 
 {% unless member.enddate == empty or member.startdate.size != member.enddate.size %}
 {% continue %}

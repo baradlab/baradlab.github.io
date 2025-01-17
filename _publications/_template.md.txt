@@ -1,0 +1,29 @@
+---
+title: "Title" # Required
+authors: "**Barad BA**" # Bold name of labmembers by wrapping with ** **
+journal: "Journal of Interesting Science" # Full Journal name or bioRxiv
+pub_date: "2024-01-13" # YYYY-MM-DD
+image: 'https://cdn.baradlab.com/img/pub/2024_barad.webp' # Use CDN!
+pmid: 'TBD' # Pubmed ID - can put "TBD"
+# pmcid: 'PMC4589481' # Optional Pubmed Central ID
+# biorxiv: '014738' # Optional biorxiv id - the full id used in the doi, which is formatted YYYY.MM.DD.ID on new preprints
+pdf: `https://cdn.baradlab.com/pdf/2024_barad.pdf # Use CDN!
+# pdbs: # Optional, can put as many as you want
+# - 3J9I
+# emdbs: #Optional, can put as many as you want
+# - 5623
+# paired_maps_and_models: # optional
+# - pdb: 3J9J
+#   emdb: 5623
+# github: # Optional, can put as many as you want
+# - code: EMRinger
+#   url: fraser-lab/EMRinger
+# links: # Optional, can put as many as you want
+# - name: Fraser Lab
+#   url: https://fraserlab.com
+# - name: Paper Submission Celebration Photo
+#   url: https://twitter.com/fraser_lab/status/562799246689460224
+publish: false # Switch to true when ready!
+---
+
+# Paste abstract here!

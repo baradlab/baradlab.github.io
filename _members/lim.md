@@ -1,7 +1,7 @@
 ---
 name: Alex Lim
 order: 5
-image: img/members/kapa_large.webp
+image:
 position: Undergraduate Student
 email:  alexander_lim1@brown.edu
 pronouns: he/him/his

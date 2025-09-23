@@ -1,7 +1,7 @@
 ---
-title: "Cryo-electron tomography reveals coupled flavivirus replication, budding and maturation" # Required
-authors: "Dahmane S<sup>✉</sup>, Schexnaydre E, Zhang J, Rosendal E, Chotiwan N, Singh BK, Yau W-L, Lundmark R, **Barad B**<sup>✉</sup>, Grotjahn DA, Liese S, Carlson A, Överby AK<sup>✉</sup>, Carlson L-A<sup>✉</sup>" # Bold name of labmembers by wrapping with ** **
-journal: "Biorxiv" # Full Journal name or bioRxiv
+title: "Cryo-electron tomography reveals coupled flavivirus replication, budding, and maturation" # Required
+authors: "Dahmane S<sup>†✉</sup>, Schexnaydre E, Zhang J, Rosendal E, Chotiwan N, Singh BK, Yau W-L, Lundmark R, **Barad BA<sup>†✉</sup>**, Grotjahn DA, Liese S, Carlson A, Överby AK<sup>✉</sup>, Carlson L-A<sup>✉</sup>" # Bold name of labmembers by wrapping with ** **
+journal: "bioRxiv" # Full Journal name or bioRxiv
 pub_date: "2024-10-13" # YYYY-MM-DD
 image: 'img/pub/2024_dahmane.webp' # Use CDN!
 pmid: 'TBD' # Pubmed ID - can put "TBD"

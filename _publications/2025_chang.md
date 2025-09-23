@@ -1,10 +1,10 @@
 ---
 title: "Cytoplasmic ribosomes on mitochondria alter the local membrane environment for protein import" # Required
-authors: "Chang Y-T, **Barad BA**, Reza H, Zid BM, Grotjahn DA<sup>✉</sup>" # Bold name of labmembers by wrapping with ** **
-journal: "Biorxiv" # Full Journal name or bioRxiv
-pub_date: "2024-07-19" # YYYY-MM-DD
+authors: "Chang YT, **Barad BA**, Hamid J, Rahmani H, Zid BM, Grotjahn DA<sup>✉</sup>" # Bold name of labmembers by wrapping with ** **
+journal: "Journal of Cell Biology" # Full Journal name or bioRxiv
+pub_date: "2025-03-01" # YYYY-MM-DD
 image: 'img/pub/2024_chang.webp' # Use CDN!
-pmid: 'TBD' # Pubmed ID - can put "TBD"
+pmid: '40047641' # Pubmed ID - can put "TBD"
 # pmcid: 'PMC4589481' # Optional Pubmed Central ID
 biorxiv: '2024.07.17.604013' # Optional biorxiv id - the full id used in the doi, which is formatted YYYY.MM.DD.ID on new preprints
 pdf: pdf/2024_chang.pdf # Use CDN!

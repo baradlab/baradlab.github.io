@@ -19,7 +19,7 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
    sudo bundle install
    ```
    - **NOTE:** May show warnings about running as root - this is expected and safe in development environments
-   - **Timing:** Takes 60-90 seconds to complete
+   - **Timing:** Takes 40-90 seconds to complete (typically ~45 seconds)
    - **NEVER CANCEL:** Wait for completion even if it appears to hang
 
 ### Build and Development
@@ -35,7 +35,7 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
    ```bash
    bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload
    ```
-   - **Timing:** Starts in 2-3 seconds
+   - **Timing:** Starts in 3-5 seconds
    - **Access:** http://localhost:4000
    - **Features:** Auto-rebuilds on file changes, live reload in browser
    - **NEVER CANCEL:** Let server run continuously during development
@@ -64,6 +64,12 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
    - Test all navigation links: home, publications, members, teaching, news, join, contact
    - Verify responsive design and content displays correctly
    - Check browser console for JavaScript errors (some CDN blocking is normal in development)
+   - **VALIDATION CHECKLIST:**
+     - ✅ Homepage loads with lab description and "We are hiring!" section
+     - ✅ Publications page displays all research papers with proper formatting
+     - ✅ Members page shows all lab members with photos and descriptions
+     - ✅ Navigation between all sections works correctly
+     - ✅ Site responsive design works on different screen sizes
 
 ## Key Repository Structure
 
@@ -113,14 +119,14 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
 ## Build Timing and Performance
 
 ### Expected Command Times
-- `bundle install`: 60-90 seconds (first time only)
-- `bundle exec jekyll build`: < 1 second
-- `bundle exec jekyll serve`: 2-3 seconds to start
+- `bundle install`: 40-90 seconds (first time only, typically ~45 seconds)
+- `bundle exec jekyll build`: < 1.5 seconds (typically 1.3 seconds)
+- `bundle exec jekyll serve`: 3-5 seconds to start
 - `bundle exec jekyll clean`: < 1 second
 - `bundle exec jekyll doctor`: < 1 second
 
 ### NEVER CANCEL Commands
-- **NEVER CANCEL** `bundle install` - may take up to 2 minutes
+- **NEVER CANCEL** `bundle install` - may take up to 90 seconds
 - **NEVER CANCEL** long-running serve processes - these should run continuously
 
 ## Troubleshooting
@@ -151,6 +157,16 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
    - Check for liquid template syntax errors
 
 ## Important Notes
+
+### Complete End-to-End Workflow (VALIDATED)
+For a fresh repository clone, the complete workflow is:
+1. `sudo apt-get update && sudo apt-get install -y ruby-bundler`
+2. `sudo bundle install` (wait 40-90 seconds)
+3. `bundle exec jekyll build` (completes in ~1.3 seconds)
+4. `bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload` (starts in 3-5 seconds)
+5. Navigate to http://localhost:4000 and validate all functionality
+6. Make changes and test with live reload
+7. Use `bundle exec jekyll doctor` to check for issues
 
 ### Testing Requirements
 - **ALWAYS** start development server and manually test changes

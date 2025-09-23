@@ -63,13 +63,14 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
    - Navigate to http://localhost:4000
    - Test all navigation links: home, publications, members, teaching, news, join, contact
    - Verify responsive design and content displays correctly
-   - Check browser console for JavaScript errors (some CDN blocking is normal in development)
+   - Check browser console for JavaScript errors (CDN blocking from `cdn.baradlab.com` is normal in development)
    - **VALIDATION CHECKLIST:**
      - ✅ Homepage loads with lab description and "We are hiring!" section
-     - ✅ Publications page displays all research papers with proper formatting
-     - ✅ Members page shows all lab members with photos and descriptions
+     - ✅ Publications page displays all research papers with proper formatting (images will be missing in dev)
+     - ✅ Members page shows all lab members with photos and descriptions (images will be missing in dev)
      - ✅ Navigation between all sections works correctly
      - ✅ Site responsive design works on different screen sizes
+     - ✅ **For complete visual validation**: Check production site at https://baradlab.com
 
 ## Key Repository Structure
 
@@ -142,9 +143,11 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
    - Run commands with `bundle exec` prefix
 
 3. **Site not loading external assets (CDN errors):**
-   - This is normal in development - external CDNs may be blocked
-   - Site functionality remains intact
-   - External assets load correctly in production
+   - **IMPORTANT**: `https://cdn.baradlab.com` images and PDFs are blocked in development
+   - This affects publication images, member photos, and PDF links
+   - Site functionality remains intact, but visual appearance is incomplete
+   - External assets load correctly in production deployment
+   - **For full visual testing**: Use production site at https://baradlab.com to verify final appearance
 
 4. **Changes not appearing:**
    - Ensure development server is running with `--livereload`
@@ -184,6 +187,33 @@ For a fresh repository clone, the complete workflow is:
 - Site automatically deploys via GitHub Pages when pushed to main branch
 - No manual deployment steps required
 - Changes appear live within 2-3 minutes of pushing to main
+
+## CDN Configuration and Development Environment
+
+### CDN Asset Management
+The Barad Lab website uses a Content Delivery Network (CDN) at `https://cdn.baradlab.com/file/baradlabweb/` for:
+- Publication images (`img/pub/` directory)
+- PDF files (`pdf/` directory) 
+- Member photos and other static assets
+
+### Development Environment Limitations
+**CRITICAL**: CDN assets are blocked in the development environment for security reasons:
+- All `https://cdn.baradlab.com` requests will fail with `net::ERR_BLOCKED_BY_CLIENT`
+- Publication "Key Figure" images will not display
+- Member photos will appear as broken images
+- PDF download links will be inaccessible
+
+### Visual Validation Strategy
+1. **Local development**: Test functionality, navigation, and layout structure
+2. **Production verification**: Use https://baradlab.com to verify complete visual appearance
+3. **Content testing**: Ensure all text, links, and metadata display correctly locally
+4. **Image validation**: Check production site after deployment for image display
+
+### Working with CDN Assets
+- Always use CDN URLs in content files: `https://cdn.baradlab.com/file/baradlabweb/`
+- Follow the pattern: `img/pub/YYYY_lastname.webp` for publication images
+- Follow the pattern: `pdf/YYYY_lastname.pdf` for publication PDFs
+- Do not store large images or PDFs in the repository - use CDN references only
 
 ## Content Guidelines
 

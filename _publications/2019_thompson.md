@@ -1,6 +1,6 @@
 ---
 title: "Temperature-Jump Solution X-ray Scattering Reveals Distinct Motions in a Dynamic Enzyme"
-authors: "Thompson MC, **Barad BA**, Wolff AM, Cho HS, Schotte F, Schwarz DMC, Anfinrud P, Fraser JS<sup>✉</sup>"
+authors: "Thompson MC, **Barad BA**, Wolff AM, Sun Cho H, Schotte F, Schwarz DMC, Anfinrud P, Fraser JS<sup>✉</sup>"
 journal: 'Nature Chemistry'
 pub_date: '2019-09-16'
 image: 'img/pub/2018_thompson.webp'

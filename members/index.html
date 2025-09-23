@@ -12,9 +12,10 @@ The Barad lab welcomes people of any race, ethnicity, religion, national origin,
 {% assign sorted_members = site.members | sort: 'startdate' |sort: 'order' %}
 {% for member in sorted_members %}
 
-{% unless member.enddate == empty or member.startdate.size != member.enddate.size %}
+{% comment %} Skip members with end dates - they will appear in alumni sidebar {% endcomment %}
+{% if member.enddate != empty and member.enddate != blank and member.enddate.size > 0 and member.enddate[0] != '' %}
 {% continue %}
-{% endunless %}
+{% endif %}
 
 {% if member.position contains "Affiliate" or member.position contains "Visiting" %}
 {% continue %}

@@ -19,7 +19,7 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
    sudo bundle install
    ```
    - **NOTE:** May show warnings about running as root - this is expected and safe in development environments
-   - **Timing:** Takes 60-90 seconds to complete
+   - **Timing:** Takes 40-90 seconds to complete (typically ~45 seconds)
    - **NEVER CANCEL:** Wait for completion even if it appears to hang
 
 ### Build and Development
@@ -35,7 +35,7 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
    ```bash
    bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload
    ```
-   - **Timing:** Starts in 2-3 seconds
+   - **Timing:** Starts in 3-5 seconds
    - **Access:** http://localhost:4000
    - **Features:** Auto-rebuilds on file changes, live reload in browser
    - **NEVER CANCEL:** Let server run continuously during development
@@ -63,7 +63,14 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
    - Navigate to http://localhost:4000
    - Test all navigation links: home, publications, members, teaching, news, join, contact
    - Verify responsive design and content displays correctly
-   - Check browser console for JavaScript errors (some CDN blocking is normal in development)
+   - Check browser console for JavaScript errors (CDN blocking from `cdn.baradlab.com` is normal in development)
+   - **VALIDATION CHECKLIST:**
+     - ✅ Homepage loads with lab description and "We are hiring!" section
+     - ✅ Publications page displays all research papers with proper formatting (images will be missing in dev)
+     - ✅ Members page shows all lab members with photos and descriptions (images will be missing in dev)
+     - ✅ Navigation between all sections works correctly
+     - ✅ Site responsive design works on different screen sizes
+     - ✅ **For complete visual validation**: Check production site at https://baradlab.com
 
 ## Key Repository Structure
 
@@ -113,14 +120,14 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
 ## Build Timing and Performance
 
 ### Expected Command Times
-- `bundle install`: 60-90 seconds (first time only)
-- `bundle exec jekyll build`: < 1 second
-- `bundle exec jekyll serve`: 2-3 seconds to start
+- `bundle install`: 40-90 seconds (first time only, typically ~45 seconds)
+- `bundle exec jekyll build`: < 1.5 seconds (typically 1.3 seconds)
+- `bundle exec jekyll serve`: 3-5 seconds to start
 - `bundle exec jekyll clean`: < 1 second
 - `bundle exec jekyll doctor`: < 1 second
 
 ### NEVER CANCEL Commands
-- **NEVER CANCEL** `bundle install` - may take up to 2 minutes
+- **NEVER CANCEL** `bundle install` - may take up to 90 seconds
 - **NEVER CANCEL** long-running serve processes - these should run continuously
 
 ## Troubleshooting
@@ -136,9 +143,11 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
    - Run commands with `bundle exec` prefix
 
 3. **Site not loading external assets (CDN errors):**
-   - This is normal in development - external CDNs may be blocked
-   - Site functionality remains intact
-   - External assets load correctly in production
+   - **IMPORTANT**: `https://cdn.baradlab.com` images and PDFs are blocked in development
+   - This affects publication images, member photos, and PDF links
+   - Site functionality remains intact, but visual appearance is incomplete
+   - External assets load correctly in production deployment
+   - **For full visual testing**: Use production site at https://baradlab.com to verify final appearance
 
 4. **Changes not appearing:**
    - Ensure development server is running with `--livereload`
@@ -151,6 +160,16 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
    - Check for liquid template syntax errors
 
 ## Important Notes
+
+### Complete End-to-End Workflow (VALIDATED)
+For a fresh repository clone, the complete workflow is:
+1. `sudo apt-get update && sudo apt-get install -y ruby-bundler`
+2. `sudo bundle install` (wait 40-90 seconds)
+3. `bundle exec jekyll build` (completes in ~1.3 seconds)
+4. `bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload` (starts in 3-5 seconds)
+5. Navigate to http://localhost:4000 and validate all functionality
+6. Make changes and test with live reload
+7. Use `bundle exec jekyll doctor` to check for issues
 
 ### Testing Requirements
 - **ALWAYS** start development server and manually test changes
@@ -168,6 +187,33 @@ The Barad Lab website is a Jekyll-based static site using GitHub Pages. It featu
 - Site automatically deploys via GitHub Pages when pushed to main branch
 - No manual deployment steps required
 - Changes appear live within 2-3 minutes of pushing to main
+
+## CDN Configuration and Development Environment
+
+### CDN Asset Management
+The Barad Lab website uses a Content Delivery Network (CDN) at `https://cdn.baradlab.com/file/baradlabweb/` for:
+- Publication images (`img/pub/` directory)
+- PDF files (`pdf/` directory) 
+- Member photos and other static assets
+
+### Development Environment Limitations
+**CRITICAL**: CDN assets are blocked in the development environment for security reasons:
+- All `https://cdn.baradlab.com` requests will fail with `net::ERR_BLOCKED_BY_CLIENT`
+- Publication "Key Figure" images will not display
+- Member photos will appear as broken images
+- PDF download links will be inaccessible
+
+### Visual Validation Strategy
+1. **Local development**: Test functionality, navigation, and layout structure
+2. **Production verification**: Use https://baradlab.com to verify complete visual appearance
+3. **Content testing**: Ensure all text, links, and metadata display correctly locally
+4. **Image validation**: Check production site after deployment for image display
+
+### Working with CDN Assets
+- Always use CDN URLs in content files: `https://cdn.baradlab.com/file/baradlabweb/`
+- Follow the pattern: `img/pub/YYYY_lastname.webp` for publication images
+- Follow the pattern: `pdf/YYYY_lastname.pdf` for publication PDFs
+- Do not store large images or PDFs in the repository - use CDN references only
 
 ## Content Guidelines
 

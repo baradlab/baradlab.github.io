@@ -78,6 +78,17 @@ Subsequently: {{member.subsequent}} <br>
 </div>
 {% endfor %}
 
+{% comment %} Check if there are any undergraduate interns before showing the section {% endcomment %}
+{% assign has_undergraduate_interns = false %}
+{% for undergraduate in sorted_alumni %}
+  {% assign position = undergraduate.position | downcase %}
+  {% if position contains "intern" %}
+    {% assign has_undergraduate_interns = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if has_undergraduate_interns %}
 <br>
 ## Undergraduate Interns
 {% for undergraduate in sorted_alumni %}
@@ -110,8 +121,20 @@ Subsequently: {{undergraduate.subsequent}}<br>
 {% endif %}
 </p>
 </div> {% endfor %}
+{% endif %}
 
 
+{% comment %} Check if there are any high school interns before showing the section {% endcomment %}
+{% assign has_high_school_interns = false %}
+{% for student in sorted_alumni %}
+  {% assign position = student.position | downcase %}
+  {% if position contains "high school" %}
+    {% assign has_high_school_interns = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if has_high_school_interns %}
 <br>
 ## High School Interns
 {% for student in sorted_alumni %}
@@ -142,8 +165,20 @@ Subsequently: {{student.subsequent}}<br>
 {% endif %}
 </p>
 </div> {% endfor %}
+{% endif %}
 
 
+{% comment %} Check if there are any visitors before showing the section {% endcomment %}
+{% assign has_visitors = false %}
+{% for visitor in sorted_alumni %}
+  {% assign position = visitor.position | downcase %}
+  {% if position contains "visiting" %}
+    {% assign has_visitors = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if has_visitors %}
 <br>
 ## Barad Lab Visitors
 {% for visitor in sorted_alumni %}
@@ -179,3 +214,4 @@ Subsequently: {{student.subsequent}}<br>
 {% endif %}
 </p>
 </div> {% endfor %}
+{% endif %}

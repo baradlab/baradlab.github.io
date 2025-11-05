@@ -3,7 +3,7 @@ title: "Surface morphometrics reveals local membrane thickness variation in orga
 authors: "Medina M, Chang YT, Rahmani H, Fuentes D, **Barad BA<sup>✉</sup>**, Grotjahn DA<sup>✉</sup>" # Bold name of labmembers by wrapping with ** **
 journal: "bioRxiv" # Full Journal name or bioRxiv
 pub_date: "2025-01-01" # YYYY-MM-DD
-image: 'img/pub/2025_medina.webp' # Use CDN!
+image: 'img/pub/2025_medina_chang.webp' # Use CDN!
 pmid: 'TBD' # Pubmed ID - can put "TBD"
 # pmcid: 'PMC4589481' # Optional Pubmed Central ID
 biorxiv: '2025.01.01.000000' # Optional biorxiv id - the full id used in the doi, which is formatted YYYY.MM.DD.ID on new preprints

@@ -12,7 +12,7 @@ peer-review:
 
 published:
 - pmid: "" # PubMed ID of final published version
-  pdf: "" # Full CDN link to PDF of published version
+  journal_url: "" # Full URL to the journal version
   
 # Optional additional links in post-review section
 links:

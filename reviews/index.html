@@ -60,8 +60,8 @@ Peer review of scientific manuscripts is essential for scientific communication 
 		{% if pub.pmid %}
 		<li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{pub.pmid}}" title="PubMed: {{pub.pmid}} (opens in new tab)" target="_blank">{{pub.pmid}}</a></li>
 		{% endif %}
-		{% if pub.pdf %}
-		<li><a href="{{site.cdn}}{{pub.pdf}}" title="PDF of Published Version (opens in new tab)" target="_blank">Full Text</a></li>
+		{% if pub.journal_url %}
+		<li><a href="{{pub.journal_url}}" title="Journal Version (opens in new tab)" target="_blank">Journal Version</a></li>
 		{% endif %}
 		{% endfor %}
 		

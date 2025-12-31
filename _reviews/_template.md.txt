@@ -9,11 +9,15 @@ abstract: "optional one-sentence abstract"
 peer-review:
 - preprint_url: "" # Full URL to the preprint
   review_url: "" # Full URL to the public review
-  pdf: "" # Full CDN link to PDF of review
 
 published:
 - pmid: "" # PubMed ID of final published version
   pdf: "" # Full CDN link to PDF of published version
+  
+# Optional additional links in post-review section
+links:
+- name: "" # Name of the link
+  url: "" # URL of the link
 
 ---
 

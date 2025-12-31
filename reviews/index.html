@@ -41,19 +41,14 @@ Peer review of scientific manuscripts is essential for scientific communication 
 		
 		{% for record in review.peer-review %}
 		
-		<!--Biorxiv Preprint-->
-		{% if record.biorxiv %}
-		<li>Biorxiv Preprint: <a href="https://doi.org/10.1101/{{record.biorxiv}}" title="BioRxiv Preprint: {{record.biorxiv}} (opens in new tab)" target="_blank">{{record.biorxiv | split: "." | last }}</a></li>
-		{% endif %}
-		
-		<!--Other Preprint-->
+		<!--Preprint-->
 		{% if record.preprint_url %}
-		<li>{% if record.preprint_journal %}{{record.preprint_journal}} {% endif %}Preprint: <a href="{{record.preprint_url}}" title="Preprint (opens in new tab)" target="_blank">Link</a></li>
+		<li>Preprint: <a href="{{record.preprint_url}}" title="Preprint (opens in new tab)" target="_blank">Link</a></li>
 		{% endif %}
 		
-		<!--PubPeer Review-->
-		{% if record.pubpeer %}
-		<li>Public Review on PubPeer: <a href="https://pubpeer.com/publications/{{record.pubpeer}}" title="PubPeer Review (opens in new tab)" target="_blank">PubPeer</a></li>
+		<!--Public Review-->
+		{% if record.review_url %}
+		<li>Public Review: <a href="{{record.review_url}}" title="Public Review (opens in new tab)" target="_blank">Link</a></li>
 		{% endif %}
 		
 		<!--PDF of Review-->

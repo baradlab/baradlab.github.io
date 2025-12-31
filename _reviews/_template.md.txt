@@ -7,10 +7,8 @@ image: "img/reviews/YYYY_author.webp" # Use CDN! Optional image
 abstract: "optional one-sentence abstract"
 
 peer-review:
-- biorxiv: "" # biorxiv ID, example "2024.01.01.123456" or versioned "2024.01.01.123456v1"
-  pubpeer: "" # PubPeer link ID, the part after pubpeer.com/publications/
-  preprint_journal: "" # Name of preprint server if not biorxiv (e.g., "arXiv", "ChemRxiv")
-  preprint_url: "" # Full URL to preprint if not biorxiv
+- preprint_url: "" # Full URL to the preprint
+  review_url: "" # Full URL to the public review
   pdf: "" # Full CDN link to PDF of review
 
 published:

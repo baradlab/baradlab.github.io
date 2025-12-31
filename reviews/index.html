@@ -32,7 +32,7 @@ Peer review of scientific manuscripts is essential for scientific communication 
 <div class="row" style="padding-top: 30px; margin-top: -20px">
 	<div class="col-sm-6">
 		{% if review.image %}
-		<img class="img-fluid" src="{{site.cdn}}{{review.image}}" alt="Key Figure" style="max-height: 200px;">
+		<img class="img-fluid" src="{{site.cdn}}{{review.image}}" alt="Representative figure for {{review.title | strip_html | strip}}" style="max-height: 200px;">
 		{% endif %}
 	</div>
 	<ul class="col-sm-6">

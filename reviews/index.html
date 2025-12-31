@@ -1,0 +1,81 @@
+---
+title: Peer Reviews from the Barad Lab
+layout: parallax
+group: reviews
+banner: img/site/banners/square_tomo.webp
+---
+<h1>Peer Reviews</h1>
+<div class="container-fluid">
+<p>
+Peer review of scientific manuscripts is essential for scientific communication and plays an important role in refining the body of work prior to final publication. We believe that transparency in peer review can improve the speed, quality, and collegiality of the publication process. Peer review is also an important training opportunity for lab members in scientific thinking and writing. As such, we only review manuscripts that have been posted on preprint servers and we post our peer review comments publicly.
+</p>
+
+{% assign sorted = site.reviews | sort: "date" | reverse %}
+{% for review in sorted %}
+
+<hr>
+<div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{review.date}}">
+	<div>
+		<h5>{{ review.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</h5>
+		<h6>{{ review.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</h6>
+		{% if review.reviewers %}
+			Reviewed by: <strong>{{ review.reviewers | markdownify | remove: '<p>' | remove: '</p>' | strip }}</strong>
+			{% if review.date %} - {{ review.date | date: "%B %Y" }}{% endif %}
+		{% endif %}
+		<br>
+		{% if review.abstract %}
+			<p>{{ review.abstract | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+		{% endif %}
+	</div>
+</div>
+
+<div class="row" style="padding-top: 30px; margin-top: -20px">
+	<div class="col-sm-6">
+		{% if review.image %}
+		<img class="img-fluid" src="{{site.cdn}}{{review.image}}" alt="Key Figure" style="max-height: 200px;">
+		{% endif %}
+	</div>
+	<ul class="col-sm-6">
+		<br>
+		<h6>Access the Review</h6>
+		
+		{% for record in review.peer-review %}
+		
+		<!--Biorxiv Preprint-->
+		{% if record.biorxiv %}
+		<li>Biorxiv Preprint: <a href="https://doi.org/10.1101/{{record.biorxiv}}" title="BioRxiv Preprint: {{record.biorxiv}} (opens in new tab)" target="_blank">{{record.biorxiv | split: "." | last }}</a></li>
+		{% endif %}
+		
+		<!--Other Preprint-->
+		{% if record.preprint_url %}
+		<li>{% if record.preprint_journal %}{{record.preprint_journal}} {% endif %}Preprint: <a href="{{record.preprint_url}}" title="Preprint (opens in new tab)" target="_blank">Link</a></li>
+		{% endif %}
+		
+		<!--PubPeer Review-->
+		{% if record.pubpeer %}
+		<li>Public Review on PubPeer: <a href="https://pubpeer.com/publications/{{record.pubpeer}}" title="PubPeer Review (opens in new tab)" target="_blank">PubPeer</a></li>
+		{% endif %}
+		
+		<!--PDF of Review-->
+		{% if record.pdf %}
+		<li><a href="{{site.cdn}}{{record.pdf}}" title="PDF of Review (opens in new tab)" target="_blank">Review PDF</a></li>
+		{% endif %}
+		
+		{% endfor %}
+		
+		<!--Published Version-->
+		{% for pub in review.published %}
+		{% if pub.pmid %}
+		<br>
+		<h6>Published Version</h6>
+		<li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{pub.pmid}}" title="PubMed: {{pub.pmid}} (opens in new tab)" target="_blank">{{pub.pmid}}</a></li>
+		{% if pub.pdf %}
+		<li><a href="{{site.cdn}}{{pub.pdf}}" title="PDF of Published Version (opens in new tab)" target="_blank">Published PDF</a></li>
+		{% endif %}
+		{% endif %}
+		{% endfor %}
+	</ul>
+</div>
+<br>
+{% endfor %}
+</div>

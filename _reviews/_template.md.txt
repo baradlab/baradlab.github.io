@@ -1,0 +1,22 @@
+---
+title: "Title of Manuscript Reviewed"
+date: "YYYY-MM-DD" # Date of Public Review, then update to Date of Publication
+authors: "Author1 A, Author2 B, **Barad BA**" # Bold name of lab members by wrapping with ** **
+reviewers: "Reviewer1, Reviewer2" # Lab members who reviewed the manuscript
+image: "img/reviews/YYYY_author.webp" # Use CDN! Optional image
+abstract: "optional one-sentence abstract"
+
+peer-review:
+- biorxiv: "" # biorxiv ID, example "2024.01.01.123456" or versioned "2024.01.01.123456v1"
+  pubpeer: "" # PubPeer link ID, the part after pubpeer.com/publications/
+  preprint_journal: "" # Name of preprint server if not biorxiv (e.g., "arXiv", "ChemRxiv")
+  preprint_url: "" # Full URL to preprint if not biorxiv
+  pdf: "" # Full CDN link to PDF of review
+
+published:
+- pmid: "" # PubMed ID of final published version
+  pdf: "" # Full CDN link to PDF of published version
+
+---
+
+# Optional: Paste review summary or highlights here

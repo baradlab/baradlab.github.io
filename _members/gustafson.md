@@ -7,7 +7,7 @@ order: 3
 email: gustafan@ohsu.edu
 # scholar: XDH9FrwAAAAJ
 # twitter: benjaminbarad
-bluesky: @andrew.baradlab.com
+bluesky: andrew.baradlab.com
 orcid: 0000-0001-5253-0001
 github: andrewgust
 pronouns: he/him/his

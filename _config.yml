@@ -24,5 +24,9 @@ collections:
     group: publications
     layout: default
     output: True
+  reviews:
+    group: reviews
+    layout: default
+    output: True
 
 

@@ -1,0 +1,80 @@
+---
+title: Peer Reviews from the Barad Lab
+layout: parallax
+group: reviews
+banner: img/site/banners/square_tomo.webp
+---
+<h1>Peer Reviews</h1>
+<div class="container-fluid">
+<p>
+Peer review of scientific manuscripts is essential for scientific communication and plays an important role in refining the body of work prior to final publication. We believe that transparency in peer review can improve the speed, quality, and collegiality of the publication process. Peer review is also an important training opportunity for lab members in scientific thinking and writing. As such, we only review manuscripts that have been posted on preprint servers and we post our peer review comments publicly.
+</p>
+
+{% assign sorted = site.reviews | sort: "date" | reverse %}
+{% for review in sorted %}
+
+<hr>
+<div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{review.date}}">
+	<div>
+		<h5>{{ review.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</h5>
+		<h6>{{ review.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</h6>
+		{% if review.reviewers %}
+			Reviewed by: <strong>{{ review.reviewers | markdownify | remove: '<p>' | remove: '</p>' | strip }}</strong>
+			{% if review.date %} - {{ review.date | date: "%B %Y" }}{% endif %}
+		{% endif %}
+		<br>
+		{% if review.abstract %}
+			<p>{{ review.abstract | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+		{% endif %}
+	</div>
+</div>
+
+<div class="row" style="padding-top: 30px; margin-top: -20px">
+	<div class="col">
+		{% if review.image %}
+		<img class="img-fluid" src="{{site.cdn}}{{review.image}}" alt="Representative figure for {{review.title | strip_html | strip}}" style="max-height: 250px;">
+		{% endif %}
+	</div>
+	<ul class="col">
+		<h5>Peer Review</h5>
+		
+		{% for record in review.peer-review %}
+		
+		<!--Preprint-->
+		{% if record.preprint_url %}
+		<li>Preprint: <a href="{{record.preprint_url}}" title="Preprint (opens in new tab)" target="_blank">Link</a></li>
+		{% endif %}
+		
+		<!--Public Review-->
+		{% if record.review_url %}
+		<li>Public Review: <a href="{{record.review_url}}" title="Public Review (opens in new tab)" target="_blank">Link</a></li>
+		{% endif %}
+		
+		{% endfor %}
+	</ul>
+	<ul class="col">
+		{% if review.published %}
+		<h5>Post-Review</h5>
+		<h6>Access the paper</h6>
+		{% for pub in review.published %}
+		{% if pub.pmid %}
+		<li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{pub.pmid}}" title="PubMed: {{pub.pmid}} (opens in new tab)" target="_blank">{{pub.pmid}}</a></li>
+		{% endif %}
+		{% if pub.journal_url %}
+		<li><a href="{{pub.journal_url}}" title="Journal Version (opens in new tab)" target="_blank">Journal Version</a></li>
+		{% endif %}
+		{% endfor %}
+		
+		{% if review.links %}
+		<br>
+		<h6>Additional Link{% if review.links.size > 1 %}s{% endif %}</h6>
+		{% for link in review.links %}
+		<li><a href="{{link.url}}" alt="{{link.name}} (opens in new tab)" target="_blank">{{link.name}}</a></li>
+		{% endfor %}
+		{% endif %}
+		{% endif %}
+	</ul>
+</div>
+<br>
+{% endfor %}
+</div>

@@ -2,12 +2,12 @@
 name: Andrew Gustafson
 pubname: Gustafson A
 image: img/members/gustafson_large.webp
-position: Graduate Student
+position: PhD Candidate
 order: 3
 email: gustafan@ohsu.edu
 # scholar: XDH9FrwAAAAJ
 # twitter: benjaminbarad
-# bluesky: tomo.science
+bluesky: @andrew.baradlab.com
 orcid: 0000-0001-5253-0001
 github: andrewgust
 pronouns: he/him/his
@@ -16,4 +16,4 @@ startdate: ["2024-03-04"]
 enddate: []
 ---
 
-Andrew is interested in working at the interface of chemistry and biology to reveal the underlying mechanisms of frequently intractable cellular processes such as lipid trafficking and membrane dynamics. He wants to accomplish this by utilizing an approach that bridges the disciplines of biochemistry, chemical biology, and structural biology, to achieve a greater understanding from the molecular to the cellular level.
+Andrew is interested in working at the interface of chemistry and biology to reveal the underlying mechanisms of frequently intractable cellular processes such as lipid trafficking and membrane dynamics. He wants to accomplish this by utilizing an approach that bridges the disciplines of biochemistry, chemical biology, and structural biology, to achieve a greater understanding from the molecular to the cellular level. Andrew is funded by the OHSU Department of Chemical Physiology & Biochemistry T32 training grant (5T32GM142625).

@@ -26,3 +26,9 @@ collections:
     output: True
 
 
+
+exclude:
+  - pdf_upload/
+  - Gemfile
+  - Gemfile.lock
+  - README.md

@@ -5,6 +5,8 @@ group: home
 banner: img/site/banners/square_fog.webp
 ---
 
-The Barad lab specializes in cellular cryo-electron tomography (CryoET), a microscopy technique that captures pristine three-dimensional snapshots of the cellular environment at unprecedented resolution without the need for chemical fixation or labeling, revealing membranes, filaments, and protein complexes in their native state. CryoET has the potential to connect protein structural biology with sub-cellular localization and morphology within a single experiment; we develop computational tools to connect and contextualize these different scales of biological organization. We use cryoET and these new computational tools to understand how mammalian cells remodel themselves in response to intracellular bacterial infection. Bacteria are masterful manipulators of mammalian cells, and by learning how bacterial effector proteins drive large scale cellular reorganization, we aim to reveal the underlying regulatory mechanisms for cellular architecture.
+The Barad lab uses cellular cryo-electron tomography (CryoET) to understand how the membranes of barrier tissues are organized in health and remodeled in disease. CryoET captures pristine three-dimensional snapshots of the cellular environment at molecular resolution, without chemical fixation or labeling, revealing membranes, filaments, and protein complexes in their native state. We pair that imaging with computational tools we build ourselves, which turn a tomogram into quantified membrane structure and make a change in membrane geometry a rigorous measurement rather than a qualitative impression. Doing both halves in one lab lets us ask how an intact, differentiated barrier is built at molecular resolution, and how it fails under stress and disease. We begin with the gut epithelium and the pathogens that breach it, working toward reading that pathology directly in patient-derived tissue.
 
-## We are [hiring](/join)!
+## [Read more about our research](/research)
+
+We do not have an advertised opening at the moment, but we are always glad to hear from prospective lab members — see [joining the lab](/join).

@@ -12,6 +12,7 @@ twitter: markfrankbio
 bluesky: markfrankbio.bsky.social
 pronouns: he/him/his
 startdate: ["2024-10-14"]
+enddate: ["2026-09-29"]
 ---
 Mark received his Ph.D. in Biochemistry, Microbiology, and Molecular Biology from The Pennsylvania State University on August 10, 2024. During his Ph.D., Mark studied the structure/function of cellulose synthase as part of the Center for Lignocellulose Structure and Formation in the lab of B. Tracy Nixon, where he learned how to analyze and process tilt series data for reconstructing tomograms and subsequent subtomogram averaging to determine the nanoscale structure of cellulose microfibrils synthesized in vitro. 
 

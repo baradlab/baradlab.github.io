@@ -7,7 +7,7 @@ image: "img/pub/2022_wolff.webp"
 pmid: "37723259"
 pmcid: PMC10624634
 biorxiv_version: "2022.06.10.495662v1"
-pdf: "pub/2023_wolff_nature_chemistry.pdf"
+pdf: "pdf/2023_wolff_nature_chemistry.pdf"
 pdbs:
   - "8CVU"
   - "8CVV"

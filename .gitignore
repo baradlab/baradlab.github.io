@@ -6,3 +6,4 @@ _site/
 *.webp
 *.pdf
 Gemfile.lock
+pdf_upload/

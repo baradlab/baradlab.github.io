@@ -6,7 +6,10 @@ pub_date: "2024-01-13" # YYYY-MM-DD
 image: 'https://cdn.baradlab.com/img/pub/2024_barad.webp' # Use CDN!
 pmid: 'TBD' # Pubmed ID - can put "TBD"
 # pmcid: 'PMC4589481' # Optional Pubmed Central ID
-# biorxiv: '014738' # Optional biorxiv id - the full id used in the doi, which is formatted YYYY.MM.DD.ID on new preprints
+# biorxiv: '014738' # Optional biorxiv id - the full id used in the doi, which is formatted YYYY.MM.DD.ID on new preprints.
+#                   # A bare id assumes the historical 10.1101 prefix. bioRxiv moved to the
+#                   # 10.64898 prefix in 2026, so for those give the FULL doi including prefix,
+#                   # e.g. biorxiv: '10.64898/2026.07.07.737043'
 pdf: `https://cdn.baradlab.com/pdf/2024_barad.pdf # Use CDN!
 # pdbs: # Optional, can put as many as you want
 # - 3J9I

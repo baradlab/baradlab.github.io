@@ -10,8 +10,9 @@ Our lab welcomes applicants from any race, ethnicity, religion, national origin,
 
 We are always in the market for motivated and talented people, even if we do not have an open position currently advertised. We are interested in engaging with you in a conversation about your scientific background and goals for your future career (in academia, industry, or other ventures). We strive to provide excellent training across a wide range of computational and experimental techniques. If interested please send your CV/Resume to [Dr. Benjamin Barad](/contact). Because we believe in fair compensation for people's work, we do not accept volunteer positions in the lab.
 
-### Currently, we have the following advertised open positions available, but we will hire for additional positions on demand:
-* [Postdoctoral Researcher](https://postdoctoral-ohsu.icims.com/jobs/27805/postdoctoral-scholar/job) to lead projects focused on cytoskeletal reorganization during intracellular bacterial infection.
+### We do not have a formally advertised opening at the moment — please reach out anyway.
+
+We hire for positions on demand, and some of the best additions to the lab have come from people who got in touch when nothing was posted. If the science here interests you, write to [Dr. Barad](/contact) and tell us what you would want to work on; we would rather start the conversation early than have you wait for a listing to appear.
 
 ## Graduate Students
 

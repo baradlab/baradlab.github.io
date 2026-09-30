@@ -50,14 +50,33 @@ banner: img/site/banners/square_tomo.webp
 		<li>PMCID: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/{{publication.pmcid}}" title = "PubMed Central: {{publication.pmcid}} (opens in new tab)" target="_blank"> {{publication.pmcid}}</a></li>
 		{% endif %}
 
-		<!--Biorxiv - optional -->
+		<!--Biorxiv - optional.
+		    Accepts either a bare bioRxiv id ("2024.10.13.618056", "014738"), in which
+		    case the historical 10.1101 prefix is assumed, or a full DOI including its
+		    prefix ("10.64898/2026.07.07.737043") for preprints posted after bioRxiv
+		    moved off 10.1101. Anything containing a "/" is treated as a full DOI. -->
 		{% if publication.biorxiv %}
-		<li>Biorxiv Preprint: <a href="http://dx.doi.org/10.1101/{{publication.biorxiv}}" title =  "BioRxiv Preprint: {{publication.biorxiv}} (opens in new tab)" target="_blank"> {{publication.biorxiv | split: "." | last }}</a></li>
+		{% if publication.biorxiv contains "/" %}
+			{% assign biorxiv_doi = publication.biorxiv %}
+			{% assign biorxiv_id = publication.biorxiv | split: "/" | last %}
+		{% else %}
+			{% assign biorxiv_doi = publication.biorxiv | prepend: "10.1101/" %}
+			{% assign biorxiv_id = publication.biorxiv %}
+		{% endif %}
+		<li>Biorxiv Preprint: <a href="https://doi.org/{{biorxiv_doi}}" title =  "BioRxiv Preprint: {{biorxiv_id}} (opens in new tab)" target="_blank"> {{biorxiv_id | split: "." | last }}</a></li>
 		{% endif %}
 
-		<!--Biorxiv specific version-->
+		<!--Biorxiv specific version - same id-or-full-DOI handling as above, with a
+		    trailing version suffix ("2024.10.13.618056v2" or "10.64898/2026.07.07.737043v1") -->
 		{% if publication.biorxiv_version %}
-		<li>Biorxiv Preprint v{{publication.biorxiv_version | split: "." | last | split: "v" | last }}: <a href="http://www.biorxiv.org/content/10.1101/{{publication.biorxiv_version}}" title =  "BioRxiv Preprint: {{publication.biorxiv_version}} (opens in new tab)" target="_blank">{{publication.biorxiv_version | split: "." | last | split: "v" | first }}</a></li>
+		{% if publication.biorxiv_version contains "/" %}
+			{% assign biorxiv_v_doi = publication.biorxiv_version %}
+			{% assign biorxiv_v_id = publication.biorxiv_version | split: "/" | last %}
+		{% else %}
+			{% assign biorxiv_v_doi = publication.biorxiv_version | prepend: "10.1101/" %}
+			{% assign biorxiv_v_id = publication.biorxiv_version %}
+		{% endif %}
+		<li>Biorxiv Preprint v{{biorxiv_v_id | split: "." | last | split: "v" | last }}: <a href="https://www.biorxiv.org/content/{{biorxiv_v_doi}}" title =  "BioRxiv Preprint: {{biorxiv_v_id}} (opens in new tab)" target="_blank">{{biorxiv_v_id | split: "." | last | split: "v" | first }}</a></li>
 		{% endif %}
 
 		<!--Arxiv - optional -->

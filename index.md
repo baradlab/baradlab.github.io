@@ -5,8 +5,8 @@ group: home
 banner: img/site/banners/square_fog.webp
 ---
 
-The Barad lab uses cellular cryo-electron tomography (CryoET) to understand how the membranes of barrier tissues are organized in health and remodeled in disease. CryoET captures pristine three-dimensional snapshots of the cellular environment at molecular resolution, without chemical fixation or labeling, revealing membranes, filaments, and protein complexes in their native state. We pair that imaging with computational tools we build ourselves, which turn a tomogram into quantified membrane structure and make a change in membrane geometry a rigorous measurement rather than a qualitative impression. Doing both halves in one lab lets us ask how an intact, differentiated barrier is built at molecular resolution, and how it fails under stress and disease. We begin with the gut epithelium and the pathogens that breach it, working toward reading that pathology directly in patient-derived tissue.
+The Barad lab uses cellular cryo-electron tomography (CryoET) to look inside cells and see their membranes directly — no fixation, no stains, no labels. Freeze a cell fast enough and everything stays where it was: membranes, filaments, and protein complexes, all still in place. We want to understand how barrier tissues, the sheets of cells that hold an organism apart from the world, are built at that scale and what happens when something gets through. We start with the gut epithelium and the pathogens that breach it, and we build the computational tools that turn a tomogram into something we can actually measure.
 
 ## [Read more about our research](/research)
 
-We do not have an advertised opening at the moment, but we are always glad to hear from prospective lab members — see [joining the lab](/join).
+We do not always have a position formally advertised, but that has never been the real constraint — if this sounds like work you want to do, please [get in touch](/join).
